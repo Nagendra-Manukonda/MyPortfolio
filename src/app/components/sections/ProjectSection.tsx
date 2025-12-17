@@ -17,20 +17,20 @@ export default function ProjectSection() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 gap-8">
             {[
               {
-                image: "/images/my portfolio.jpeg",
+                image: "",
                 title: "Personal Portfolio",
                 description:
                   "A personal portfolio to showcase my work and skills",
               },
               {
-                image: "/images/hotel booking.jpeg",
+                image: "",
 
                 title: "Business Website",
                 description:
                   "Developed a responsive business website for a client",
               },
               {
-                image: "/images/developer.jpg",
+                image: "",
                 title: "E-commerce Platform",
                 description: "Built a modern e-commerce platform with React",
               },
