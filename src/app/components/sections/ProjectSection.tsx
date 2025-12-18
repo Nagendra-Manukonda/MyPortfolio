@@ -21,30 +21,34 @@ export default function ProjectSection() {
                 title: "Personal Portfolio",
                 description:
                   "A personal portfolio to showcase my work and skills",
+                link: "https://my-portfolio-nagendra.vercel.app",
               },
               {
                 image: "/Vivanta.png",
                 title: "Business Website",
                 description:
                   "Developed a responsive business website for a client",
+                link: "https://www.vivantahotels.com/en-in/offers/breakfast-inclusive-rate?gad_source=1&gad_campaignid=1771654502&gbraid=0AAAAADhl-__fQBBm3Y0yFpqc54VHjXXMD&gclid=Cj0KCQiA6Y7KBhCkARIsAOxhqtOl_snc4klQ0DE0uPZVmdoiCbs7bVTyEwqmhkqpYWUwljVC78m3OjcaAq9wEALw_wcB",
               },
               {
                 image: "/Ecommerces.png",
                 title: "E-commerce Platform",
                 description: "Built a modern e-commerce platform with React",
+                link: "https://login-ecommerce-tgue.vercel.app",
               },
-
               {
                 image: "/Food.png",
                 title: "GoodFood Dashboard",
                 description:
                   "Interactive dashboard analyzing food sales, customer trends, and performance insights.",
+                link: "https://goodfood-dashboard-murex.vercel.app",
               },
               {
                 image: "/DashBoard.png",
                 title: "Community Dashboard",
                 description:
-                  "Next.JS, Taiwind css,Shadcn Ui, react.js dashboard visualizing community data to track engagement, growth, and key metrics.",
+                  "Next.JS, Tailwind CSS, Shadcn UI dashboard visualizing community data.",
+                link: "https://community-dashboard-six.vercel.app",
               },
             ].map((project, index) => (
               <div
@@ -69,7 +73,7 @@ export default function ProjectSection() {
                     {project.description}
                   </p>
                   <a
-                    href="#"
+                    href={project.link}
                     className="text-black hover:text-blue-400 transition-colors"
                   >
                     <ArrowUpRightFromSquareIcon size={24} />

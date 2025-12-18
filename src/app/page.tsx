@@ -10,13 +10,16 @@ import ServicesSection from "./components/sections/ServicesSection";
 import SkillsSection from "./components/sections/SkillsSection";
 import ProjectSection from "./components/sections/ProjectSection";
 import ContactSection from "./components/sections/ContactSection";
+import SplashCursor from "@/components/SplashCursor";
 
 export default function Page() {
   return (
     <ScrollRevealProvider>
+      {/* <SplashCursor /> */}
+
       <div
-        className="min-h-screen bg-center bg-[length:70%] bg-opacity-10 bg-white dark:bg-[#121212] text-black dark:text-white transition-colors duration-300"
-        style={{ backgroundImage: "url('/images/Background image.png')" }}
+        className="min-h-screen bg-center bg-[length:50%] bg-opacity-10 bg-white dark:bg-[#121212] text-black dark:text-white transition-colors duration-300"
+        style={{ backgroundImage: "url('/Pattern-02 1 (3).png')" }}
       >
         <Header />
 
