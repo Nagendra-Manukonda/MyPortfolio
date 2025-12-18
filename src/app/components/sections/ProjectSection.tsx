@@ -17,22 +17,34 @@ export default function ProjectSection() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 gap-8">
             {[
               {
-                image: "",
+                image: "/Portfolio IMG.png",
                 title: "Personal Portfolio",
                 description:
                   "A personal portfolio to showcase my work and skills",
               },
               {
-                image: "",
-
+                image: "/Vivanta.png",
                 title: "Business Website",
                 description:
                   "Developed a responsive business website for a client",
               },
               {
-                image: "",
+                image: "/Ecommerces.png",
                 title: "E-commerce Platform",
                 description: "Built a modern e-commerce platform with React",
+              },
+
+              {
+                image: "/Food.png",
+                title: "GoodFood Dashboard",
+                description:
+                  "Interactive dashboard analyzing food sales, customer trends, and performance insights.",
+              },
+              {
+                image: "/DashBoard.png",
+                title: "Community Dashboard",
+                description:
+                  "Next.JS, Taiwind css,Shadcn Ui, react.js dashboard visualizing community data to track engagement, growth, and key metrics.",
               },
             ].map((project, index) => (
               <div

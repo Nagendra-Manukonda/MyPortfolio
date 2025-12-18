@@ -60,7 +60,7 @@ export default function Footer() {
           </a>
 
           <a
-            href=""
+            href="https://github.com/Nagendra-Manukonda"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-120 transition-transform"
@@ -68,9 +68,9 @@ export default function Footer() {
             <Image
               src="/icons8-github-logo-50.png"
               alt="GitHub"
-              width={140}
+              width={100}
               height={80}
-              className="size-8"
+              className="size-8 bg-white rounded-full"
             />
           </a>
 

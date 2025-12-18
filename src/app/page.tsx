@@ -11,7 +11,7 @@ import SkillsSection from "./components/sections/SkillsSection";
 import ProjectSection from "./components/sections/ProjectSection";
 import ContactSection from "./components/sections/ContactSection";
 
-export default function page() {
+export default function Page() {
   return (
     <ScrollRevealProvider>
       <div
@@ -20,12 +20,14 @@ export default function page() {
       >
         <Header />
 
-        <HomeSection />
-        <AboutSection />
-        <ServicesSection />
-        <SkillsSection />
-        <ProjectSection />
-        <ContactSection />
+        <main>
+          <HomeSection />
+          <AboutSection />
+          <ServicesSection />
+          <SkillsSection />
+          <ProjectSection />
+          <ContactSection />
+        </main>
 
         <Footer />
       </div>

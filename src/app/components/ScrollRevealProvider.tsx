@@ -1,7 +1,7 @@
 "use client";
+import("scrollreveal");
 
 import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
 
 export default function ScrollRevealProvider({
   children,
@@ -9,19 +9,27 @@ export default function ScrollRevealProvider({
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const sr = ScrollReveal({
-        distance: "500px",
-        duration: 1000,
-        delay: 400,
-        reset: true,
-      });
+    let sr: any;
 
-      sr.reveal(".reveal", { origin: "bottom" });
-      sr.reveal(".reveal-left", { origin: "left" });
-      sr.reveal(".reveal-right", { origin: "right" });
-      sr.reveal(".reveal-top", { origin: "top" });
+    if (typeof window !== "undefined") {
+      import("scrollreveal").then((ScrollReveal) => {
+        sr = ScrollReveal.default({
+          distance: "40px",
+          duration: 800,
+          delay: 150,
+          reset: false,
+        });
+
+        sr.reveal(".reveal", { origin: "bottom" });
+        sr.reveal(".reveal-left", { origin: "left" });
+        sr.reveal(".reveal-right", { origin: "right" });
+        sr.reveal(".reveal-top", { origin: "top" });
+      });
     }
+
+    return () => {
+      sr?.destroy();
+    };
   }, []);
 
   return <>{children}</>;
